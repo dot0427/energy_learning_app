@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/toast_background"
+    android:elevation="6dp">
+
+    <!-- 可選 icon（成就、儲存成功很好用） -->
+    <TextView
+        android:id="@+id/ToastIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨"
+        android:textSize="18sp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/ToastMessage"
+        style="@style/Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="這是一個客製 Toast"
+        android:textColor="?attr/colorOnPrimary" />
+
+</LinearLayout>

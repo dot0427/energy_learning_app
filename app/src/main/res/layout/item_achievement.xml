@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/achievement_pill_background"
+    android:elevation="4dp">
+
+    <!-- 成就名稱 -->
+    <TextView
+        android:id="@+id/tvAchievementTitle"
+        style="@style/Text.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="答題無極限"/>
+
+    <!-- 進度 -->
+    <TextView
+        android:id="@+id/tvAchievementProgress"
+        style="@style/Text.Badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 / 20"
+        android:layout_marginTop="6dp"/>
+
+</LinearLayout>

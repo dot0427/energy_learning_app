@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="?attr/colorPrimaryContainer">
+
+    <!-- 成就名稱 -->
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Text.AchievementTitle"
+        android:text="零摩擦傳說"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 描述 -->
+    <TextView
+        android:id="@+id/tvDescription"
+        style="@style/Text.AchievementBody"
+        android:text="你在沒有任何能量損失的情況下完成任務。"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 進度 -->
+    <TextView
+        android:id="@+id/tvProgress"
+        style="@style/Text.Body"
+        android:text="進度：12 / 20"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 解鎖時間 -->
+    <TextView
+        android:id="@+id/tvUnlockedAt"
+        style="@style/Text.Caption"
+        android:text="尚未解鎖"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

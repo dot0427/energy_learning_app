@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Energy_learning_app" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--主色-->
+        <item name="colorPrimary">#FDC441</item>
+        <item name="colorOnPrimary">#362200</item>
+        <item name="colorPrimaryContainer">#5A4200</item>
+        <item name="colorOnPrimaryContainer">#FFE6AA</item>
+        <!--次色-->
+        <item name="colorSecondary">#FFB473</item>
+        <item name="colorOnSecondary">#3E1A00</item>
+        <item name="colorSecondaryContainer">#6A3100</item>
+        <item name="colorOnSecondaryContainer">#FFDDBF</item>
+        <!--第三色-->
+        <item name="colorTertiary">#EBCFC9</item>
+        <item name="colorOnTertiary">#3F110E</item>
+        <item name="colorTertiaryContainer">#5C3028</item>
+        <item name="colorOnTertiaryContainer">#FBE9E6</item>
+        <!--背景/面版-->
+        <item name="android:colorBackground">#281A12</item>
+        <item name="colorOnBackground">#F6E8D8</item>
+        <item name="colorSurface">#3B2A20</item>
+        <item name="colorOnSurface">#F3E3D4</item>
+        <item name="colorSurfaceVariant">#4B392E</item>
+        <item name="colorOnSurfaceVariant">#E3CDBF</item>
+        <item name="colorOutline">#9C7E63</item>
+        <!--錯誤色-->
+        <item name="colorError">#D5482F</item>
+        <item name="colorOnError">#FFFFFF</item>
+        <item name="colorErrorContainer">#F7CCC6</item>
+        <item name="colorOnErrorContainer">#3F1510</item>
+    </style>
+</resources>

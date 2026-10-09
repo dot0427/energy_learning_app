@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeatSetupActivity">
+
+    <com.example.energy_learning_app.HeatPreviewView
+        android:id="@+id/heatPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 質量 -->
+    <TextView
+        android:id="@+id/textViewHeatMassTitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  質量 Mass"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/heatPreview"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewHeatMass"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.0 kg   "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderMass"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.5"
+        android:valueTo="10"
+        android:stepSize="0.5"
+        android:value="2.0"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeatMassTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 比熱 c -->
+    <TextView
+        android:id="@+id/textViewHeatCtitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  比熱 c"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMass"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewHeatC"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="900 J/kg·°C  "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderC"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="200"
+        android:valueTo="4200"
+        android:stepSize="50"
+        android:value="900"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeatCtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 功率 P -->
+    <TextView
+        android:id="@+id/textViewHeatPtitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  加熱功率 P"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderC"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewHeatP"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500 W   "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderP"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="2000"
+        android:stepSize="10"
+        android:value="500"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeatPtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 加熱時間 t -->
+    <TextView
+        android:id="@+id/textViewHeatTtitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  加熱時間 t"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderP"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewHeatTime"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 s   "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderTime"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="1"
+        android:valueTo="30"
+        android:stepSize="1"
+        android:value="10"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeatTtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonHeatReset"
+        style="@style/Widget.Button.Outlined.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderTime"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonHeatNext"
+        style="@style/Widget.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderTime"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

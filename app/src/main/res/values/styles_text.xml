@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 頁面主標題 -->
+    <style name="Text.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/gensenrounded_bold</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">-2dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- 區塊標題 -->
+    <style name="Text.SectionTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/gensenrounded_medium</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">-1dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <!-- 副標題/小節標題 -->
+    <style name="Text.Subtitle" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/gensenrounded_medium</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">-1dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <!-- 內文（較大） -->
+    <style name="Text.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/gensenrounded_regular</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 一般內文（預設 body） -->
+    <style name="Text.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/gensenrounded_regular</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 小字/註解 -->
+    <style name="Text.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/gensenrounded_light</item>
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <!-- 成就名稱（大字） -->
+    <style name="Text.AchievementTitle" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/gensenrounded_heavy</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">-2dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <!-- 成就描述 -->
+    <style name="Text.AchievementBody" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/gensenrounded_regular</item>
+        <item name="android:textColor">?attr/colorOnPrimaryContainer</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 成就卡片上的小標籤 -->
+    <style name="Text.Badge" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/gensenrounded_medium</item>
+        <item name="android:textColor">?attr/colorOnSecondaryContainer</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 按鈕文字 -->
+    <style name="Text.Button" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/gensenrounded_heavy</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 小按鈕文字 -->
+    <style name="Text.ButtonSecondary" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/gensenrounded_heavy</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+</resources>

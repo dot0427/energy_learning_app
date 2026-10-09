@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrictionSetupActivity">
+
+    <com.example.energy_learning_app.FrictionPreviewView
+        android:id="@+id/frictionPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 質量 -->
+    <TextView
+        android:id="@+id/textViewFrictionMassTitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   質量 Mass"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/frictionPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewFrictionMass"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.0 kg   "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderMass"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0.5"
+        android:valueTo="10"
+        android:stepSize="0.5"
+        android:value="2.0"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrictionMassTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 靜摩擦係數 μs -->
+    <TextView
+        android:id="@+id/textViewFrictionMuSTitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   靜摩擦係數 μs"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMass"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textViewFrictionMuS"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.40      "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderMuS"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMuS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:stepSize="0.05"
+        android:value="0.40"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrictionMuSTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 動摩擦係數 μk -->
+    <TextView
+        android:id="@+id/textViewFrictionMuKTitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   動摩擦係數 μk"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMuS"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textViewFrictionMuK"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.30      "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderMuK"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderMuK"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="1"
+        android:stepSize="0.05"
+        android:value="0.30"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrictionMuKTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 最大推力 Fmax -->
+    <TextView
+        android:id="@+id/textViewFrictionFmaxTitle"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   推力上限 Fmax"
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderMuK"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/textViewFrictionFmax"
+        style="@style/Text.Body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 N      "
+        android:textColor="#5A3600"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/sliderFmax"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/sliderFmax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:valueFrom="0"
+        android:valueTo="100"
+        android:stepSize="1"
+        android:value="25"
+        app:labelBehavior="gone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFrictionFmaxTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonFrictionReset"
+        style="@style/Widget.Button.Outlined.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重置"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderFmax"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        android:id="@+id/buttonFrictionNext"
+        style="@style/Widget.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="確認"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/sliderFmax"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

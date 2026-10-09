@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主要按鈕 -->
+    <style name="Widget.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="android:textAppearance">@style/Text.Button</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <!-- 次要按鈕 -->
+    <style name="Widget.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">?attr/colorSecondary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:paddingEnd">48dp</item>
+        <item name="android:textAppearance">@style/Text.ButtonSecondary</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="rippleColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Widget.Button.Small" parent="Widget.Button">
+        <item name="android:textSize">17sp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:paddingStart">36dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:paddingBottom">9dp</item>
+    </style>
+
+    <style name="Widget.Button.Outlined.Small" parent="Widget.Button.Outlined">
+        <item name="android:textSize">17sp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:paddingStart">36dp</item>
+        <item name="android:paddingEnd">36dp</item>
+        <item name="android:paddingBottom">9dp</item>
+    </style>
+
+    <!-- 文字按鈕 -->
+    <style name="Widget.Button.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="fontFamily">@font/gensenrounded_medium</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="rippleColor">?attr/colorPrimary</item>
+    </style>
+
+</resources>

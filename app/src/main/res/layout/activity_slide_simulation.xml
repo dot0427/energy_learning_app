@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Replay 右上角 -->
+    <ImageButton
+        android:id="@+id/buttonSlideReplay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/play_button"
+        android:src="@android:drawable/ic_media_play"
+        android:contentDescription="Replay"
+        android:paddingStart="14dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="12dp"/>
+
+    <!-- ① 動畫區 -->
+    <com.example.energy_learning_app.SlideSimView
+        android:id="@+id/slideSimView"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- ② 圖表區（先用 TextView 當占位，之後換 MPAndroidChart） -->
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/SlideChart"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="#0FFFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/slideSimView"
+        app:layout_constraintStart_toStartOf="@+id/slideSimView"
+        app:layout_constraintEnd_toEndOf="@+id/slideSimView"
+        android:layout_marginTop="24dp"/>
+
+
+    <!-- ③ 算式區 -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardFormula"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="2dp"
+        app:strokeColor="?attr/colorSecondary"
+        app:cardElevation="2dp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/SlideChart"
+        app:layout_constraintStart_toStartOf="@+id/slideSimView"
+        app:layout_constraintEnd_toEndOf="@+id/slideSimView"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/textViewSlideFormula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:lineSpacingExtra="6dp"
+            style="@style/Text.BodyLarge"
+            android:text="...算式文字..." />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- 底部按鈕列 -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonSlideReset"
+            style="@style/Widget.Button.Outlined.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSlideExplain"
+            style="@style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="講解"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/buttonSlidePrac"
+            style="@style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="練習"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
